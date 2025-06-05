@@ -1,0 +1,2 @@
+# Maturitná práca
+Test inicializácie
