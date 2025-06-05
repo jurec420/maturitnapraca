@@ -1,4 +1,6 @@
 <?php
 session_start();
-echo "This is a placeholder for the PHP file.";
+session_destroy();
+header('Location: login.php');
+exit;
 ?>
