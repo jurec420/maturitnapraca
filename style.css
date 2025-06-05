@@ -1,0 +1,78 @@
+
+/* Final style.css with all modern features */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    background-color: #1a73e8;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nav-links {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #1a73e8;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 180px;
+    transition: max-height 0.4s ease;
+    z-index: 99;
+    border-radius: 0 0 6px 6px;
+}
+
+.nav-links.show {
+    max-height: 500px;
+}
+
+.nav-links a, .nav-user {
+    padding: 10px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    .navbar, .nav-links {
+        background-color: #1e1e1e;
+    }
+    a {
+        color: #90caf9;
+    }
+    button {
+        background-color: #2196f3;
+    }
+}
